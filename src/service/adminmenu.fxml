@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.AdminController">
+   <bottom>
+      <StackPane prefHeight="120.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="140.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../menuimage/Home.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="홈" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="140.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../menuimage/Category.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="카테고리" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" onMouseClicked="#wishlistProc" prefHeight="100.0" prefWidth="140.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="100.0" onMouseClicked="#productmanageProc" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../menuimage/productManage.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="상품관리" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" onMouseClicked="#myPageProc" prefHeight="100.0" prefWidth="140.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="100.0" onMouseClicked="#membermanageProc" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../menuimage/memberManage.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="회원관리" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" onMouseClicked="#logoutProc" prefHeight="100.0" prefWidth="140.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../menuimage/Logout.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="로그아웃" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </bottom>
+   <top>
+      <StackPane prefHeight="150.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="700.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="loginUserIDLabel" alignment="CENTER" text="Label" />
+                           </children>
+                        </HBox>
+                        <ImageView fx:id="searchImage" fitHeight="60.0" fitWidth="100.0" onMouseClicked="#searchProc" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../everyOneShopping_HyeonJin/src/service/search.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="wishlistimage" fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../everyOneShopping_HyeonJin/src/service/cart.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </top>
+</BorderPane>

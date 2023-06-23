@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="faq.FaqController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="700.0" spacing="20.0">
+               <children>
+                  <Label text="제목" />
+                  <TextField fx:id="faqsubject" prefWidth="500.0" text="자주 묻는 질문 제목을 작성하는 구역" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="450.0" prefWidth="700.0" spacing="20.0">
+               <children>
+                  <Label text="내용" />
+                  <TextArea fx:id="faqcontent" prefHeight="400.0" prefWidth="500.0" text="자주 묻는 질문 내용이 들어가는 곳" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Button fx:id="faqwriteButton" mnemonicParsing="false" onMouseClicked="#faqwriteProc" text="작성하기" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="80.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="50.0" text="자주 묻는 질문 관리 페이지" />
+            <Label fx:id="date" text="Label" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

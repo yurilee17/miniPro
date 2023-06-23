@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="faq.FaqController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="boardback" onMouseClicked="#boardbackProc" prefHeight="28.0" prefWidth="38.0" text="&lt;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="boardsubject" alignment="CENTER" prefHeight="28.0" prefWidth="500.0" text="자주 묻는 질문 제목" />
+            <Label fx:id="boarddate" prefHeight="18.0" prefWidth="100.0" text="날짜" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <Text fx:id="boardcontent" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Button fx:id="boardwritebutton" mnemonicParsing="false" onMouseClicked="#writeProc" text="글쓰기" />
+            <Button fx:id="boardmodifybutton" mnemonicParsing="false" onMouseClicked="#modifyProc" prefWidth="52.0" text="수정" />
+            <Button fx:id="boarddeletebutton" mnemonicParsing="false" onMouseClicked="#deleteProc" prefWidth="52.0" text="삭제" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="210.0" prefWidth="280.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="review.StarRatingController">
+   <children>
+      <Label alignment="CENTER" prefHeight="15.0" prefWidth="99.0" text="상품 리뷰 (별점)" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <StackPane prefHeight="40.0" prefWidth="249.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="starImageView1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@filled_star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="starImageView2" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@filled_star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="starImageView3" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@filled_star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="starImageView4" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@filled_star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="starImageView5" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@filled_star.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <StackPane.margin>
+                  <Insets left="40.0" />
+               </StackPane.margin>
+            </HBox>
+             
+                <Slider fx:id="ratingSlider" blockIncrement="1.0" focusTraversable="false" majorTickUnit="5.0" max="5" min="0" minorTickCount="4" prefHeight="40.0" prefWidth="251.0" snapToTicks="true" value="1.0" />
+         </children>
+         <VBox.margin>
+            <Insets right="40.0" />
+         </VBox.margin>
+      </StackPane>
+      <Label fx:id="value" alignment="CENTER" prefHeight="15.0" prefWidth="99.0" text="value" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="30.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="addBT" mnemonicParsing="false" onAction="#clickAddBT" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #fff; -fx-background-radius: 30; -fx-border-color: #ddd; -fx-border-radius: 30;" text="별점 주기" />
+   </children>
+</VBox>

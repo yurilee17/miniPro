@@ -1,0 +1,17 @@
+.dialog-pane {
+    -fx-background-color: #fff; /* 배경색 */
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color:  #fff; /* 헤더 패널 배경색 */
+    -fx-text-fill: #000; /* 헤더 텍스트 색상 */
+}
+
+.dialog-pane .content.label {
+    -fx-text-fill: #000; /* 내용 텍스트 색상 */
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: rgb(192, 192, 192); /* 버튼 배경색 */
+    -fx-text-fill: #000; /* 버튼 텍스트 색상 */
+}

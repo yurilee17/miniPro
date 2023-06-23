@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="상품 보기">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="60.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="상의">
+              <items>
+                <MenuItem mnemonicParsing="false" text="티셔츠" />
+                <MenuItem mnemonicParsing="false" text="셔츠" />
+                  <MenuItem mnemonicParsing="false" text="후드" />
+                  <MenuItem mnemonicParsing="false" text="맨투맨" />
+              </items>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="아우터">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="코트" />
+                  <MenuItem mnemonicParsing="false" text="패딩" />
+                  <MenuItem mnemonicParsing="false" text="블레이저" />
+               </items>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="하의">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="청바지" />
+                  <MenuItem mnemonicParsing="false" text="면바지" />
+                  <MenuItem mnemonicParsing="false" text="반바지" />
+               </items>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="원피스&amp;스커트">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="롱원피스" />
+                  <MenuItem mnemonicParsing="false" text="미니원피스" />
+                  <MenuItem mnemonicParsing="false" text="롱스커트" />
+                  <MenuItem mnemonicParsing="false" text="미니스커트" />
+               </items>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="브랜드 : " />
+                  <Label text="상품명 : " />
+                  <Label text="가격 : " />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="브랜드 : " />
+                  <Label text="상품명 : " />
+                  <Label text="가격 : " />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="브랜드 : " />
+                  <Label text="상품명 : " />
+                  <Label text="가격 : " />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="브랜드 : " />
+                  <Label text="상품명 : " />
+                  <Label text="가격 : " />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

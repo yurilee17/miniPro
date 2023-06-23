@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="searchview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="search.SearchController">
+   <children>
+      <VBox prefHeight="122.0" prefWidth="700.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="700.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="570.0" spacing="30.0">
+                     <children>
+                        <TextField fx:id="searchfield" focusTraversable="false" prefHeight="30.0" prefWidth="490.0" promptText="검색어를 입력하세요.">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <Label onMouseClicked="#searchProc" text="검색">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Label>
+                  <Label fx:id="searchcancel" onMouseClicked="#cancelProc" text="취소">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="150.0" prefWidth="700.0" spacing="50.0">
+         <children>
+            <Label fx:id="notice" text="최근 검색어 배치자리">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="200.0" prefWidth="700.0">
+               <children>
+                  <Label fx:id="notice1" text="인기 검색어 배치자리">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="350.0" />
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="350.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="200.0" prefWidth="700.0">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="200.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="350.0" />
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="350.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="170.0" prefWidth="700.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="170.0" prefWidth="175.0" />
+                  <VBox alignment="CENTER" prefHeight="170.0" prefWidth="175.0" />
+                  <VBox alignment="CENTER" prefHeight="170.0" prefWidth="175.0" />
+                  <VBox alignment="CENTER" prefHeight="170.0" prefWidth="175.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

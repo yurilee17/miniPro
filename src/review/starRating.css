@@ -1,0 +1,9 @@
+.custom-slider .track {
+    -fx-background-color: transparent;
+}
+
+.custom-slider .thumb {
+    -fx-background-color: transparent;
+    -fx-pref-width: 40px; /* 선택 영역의 가로 크기 */
+    -fx-pref-height: 40px; /* 선택 영역의 세로 크기 */
+}
